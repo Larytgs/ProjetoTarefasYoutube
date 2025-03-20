@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //createBrowserRouter: Cria um roteador baseado em histórico de navegação do navegador.
 //RouterProvider: Fornece o roteador criado para a aplicação.
+
 import TaskPage from "./paginas/TaskPage.jsx";
 //TaskPage: Importa a página que será exibida quando o usuário acessar a rota correspondente.
 
