@@ -1,6 +1,7 @@
 import { SlArrowRight } from "react-icons/sl";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { FaCheck } from "react-icons/fa";
 import Button from "./Button";
 
 function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
@@ -20,10 +21,11 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
         <li key={tasks.id} className="flex gap-2">
           <button
             onClick={() => onTaskClick(tasks.id)}
-            className={`bg-slate-400 text-left w-full text-white p-2 rounded-md ${
+            className={`bg-slate-400 text-left w-full text-white p-2 rounded-md flex items-center gap-2 ${
               tasks.isCompleted && "line-through"
             }`}
           >
+            {tasks.isCompleted && <FaCheck />}
             {tasks.title}
           </button>
           <Button onClick={() => onSeeDetailClick(tasks)}>
