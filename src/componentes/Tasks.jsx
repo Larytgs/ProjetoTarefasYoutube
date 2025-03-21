@@ -25,7 +25,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
               tasks.isCompleted && "line-through"
             }`}
           >
-            {tasks.isCompleted && <FaCheck />}
+            {tasks.isCompleted && <FaCheck />} {/* é tipo if else */}
             {tasks.title}
           </button>
           <Button onClick={() => onSeeDetailClick(tasks)}>
