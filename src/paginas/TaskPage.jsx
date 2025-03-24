@@ -10,7 +10,7 @@ function TaskPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen w-screen p-6 bg-slate-500 flex justify-center">
+    <div className="h-screen w-screen p-6 flex justify-center">
       <div className="w-[500px] space-y-4">
         <div className="flex justify-center relative mb-6">
           <button
